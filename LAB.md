@@ -2,9 +2,13 @@
 
 ## The situation
 
-A year ago a contractor built the Clippy export job. To make it run on a server, they created an IAM user, generated an **access key** and pasted it into a configuration file that was committed to the repository. The contractor is gone. The key never expired. Anybody who ever cloned the repository can read every file in the bucket, and the bucket holds the customer list.
+**Interviewer:** *"Walk me through it. Last year a contractor built the Clippy export job. What did they do?"*
 
-Today a security scan flags the key. You have two jobs: **stop the bleeding** (the key must stop working) and **fix the design** (the export job should never hold a long-lived key at all). The fix is a **role**: the job asks AWS Security Token Service for temporary credentials that can do one thing and expire in an hour.
+**You (after reading the repository):** *"They created an IAM user, generated an access key and committed it in a configuration file. The contractor left, the key never expired, and everyone who ever cloned the repository can read the bucket with the customer list."*
+
+**Interviewer:** *"A scan flagged it this morning. What do you do first, and what do you do second?"*
+
+That is the lab. The first job is to **stop the bleeding**: the key must stop working. The second is to **fix the design**: the export job should never hold a long-lived key at all. It should ask AWS Security Token Service for temporary credentials through a **role**, able to do one thing and expiring in an hour. You answer by doing, and the checker is the second interviewer.
 
 > **Your mission**
 > - See, with your own eyes, what the leaked key can do
@@ -47,7 +51,7 @@ B=clippy-iamlab-$(aws sts get-caller-identity --query Account --output text)
 
 ---
 
-## Part 2 - Stop the bleeding
+## Part 2 - First answer: stop the bleeding
 
 In an incident the order matters: **cut the access first, investigate second**. Make the leaked key unusable without deleting it (so the evidence stays):
 
@@ -62,7 +66,7 @@ Run Part 1 again. What do you see now?
 
 ---
 
-## Part 3 - Build the role
+## Part 3 - Second answer: build the role
 
 Create the role `clippy-export-writer` (console first, then the CLI):
 
