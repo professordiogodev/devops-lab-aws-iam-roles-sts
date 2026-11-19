@@ -24,9 +24,9 @@
 
 <p align="center"><img src="assets/gifs/situation.gif" width="300" alt="A long-lived key replaced by a temporary credential that expires"></p>
 
-**Interviewer:** *"Walk me through it. Last year a contractor built the Clippy export job. What did they do?"*
+**Interviewer:** *"Walk me through it. Your lead gave you the Clippy export job, with the words 'there is no documentation, the job just works, find out how'. What did you find?"*
 
-**You (after reading the repository):** *"They created an IAM user, generated an access key and committed it in a configuration file. The contractor left, the key never expired, and everyone who ever cloned the repository can read the bucket with the customer list."*
+**You (after reading the repository):** *"The job runs as an IAM user. Its access key was generated a year ago, committed in a configuration file, and never rotated. Everyone who ever cloned the repository can read the bucket with the customer list."*
 
 **Interviewer:** *"A scan flagged it this morning. What do you do first, and what do you do second?"*
 

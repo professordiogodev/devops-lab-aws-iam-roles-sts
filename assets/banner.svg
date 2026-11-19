@@ -5,10 +5,10 @@
 <text x="48" y="64" font-size="14" letter-spacing="3" fill="#fde68a" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-weight="700">DEVOPS BOOTCAMP · LAB</text>
 <text x="48" y="112" font-size="40" font-weight="800" fill="#ffffff" font-family="Segoe UI,Helvetica,Arial,sans-serif">AWS IAM: The Keys in the</text>
 <text x="48" y="160" font-size="40" font-weight="800" fill="#ffffff" font-family="Segoe UI,Helvetica,Arial,sans-serif">Code</text>
-<text x="48" y="190" font-size="15" fill="#e2e8f0" opacity=".92" font-family="Segoe UI,Helvetica,Arial,sans-serif">A contractor committed an access key to the Clippy repository and the</text>
-<text x="48" y="212" font-size="15" fill="#e2e8f0" opacity=".92" font-family="Segoe UI,Helvetica,Arial,sans-serif">export job has used it for a year. Replace the long-lived key with a</text>
-<text x="48" y="234" font-size="15" fill="#e2e8f0" opacity=".92" font-family="Segoe UI,Helvetica,Arial,sans-serif">role: write the trust policy and the permission policy, assume it with</text>
-<text x="48" y="256" font-size="15" fill="#e2e8f0" opacity=".92" font-family="Segoe UI,Helvetica,Arial,sans-serif">STS, and prove that the temporary credentials can write one folder of…</text>
+<text x="48" y="190" font-size="15" fill="#e2e8f0" opacity=".92" font-family="Segoe UI,Helvetica,Arial,sans-serif">Your lead gives you the undocumented Clippy export job, which has used</text>
+<text x="48" y="212" font-size="15" fill="#e2e8f0" opacity=".92" font-family="Segoe UI,Helvetica,Arial,sans-serif">a long-lived access key committed to the repository for a year.</text>
+<text x="48" y="234" font-size="15" fill="#e2e8f0" opacity=".92" font-family="Segoe UI,Helvetica,Arial,sans-serif">Replace the long-lived key with a role: write the trust policy and the</text>
+<text x="48" y="256" font-size="15" fill="#e2e8f0" opacity=".92" font-family="Segoe UI,Helvetica,Arial,sans-serif">permission policy, assume it with STS, and prove that the temporary…</text>
 <rect x="48" y="288" width="105" height="32" rx="16" fill="#ffffff" fill-opacity=".14" stroke="#fde68a" stroke-opacity=".7"/><text x="62" y="309" font-size="14" fill="#ffffff" font-family="Segoe UI,Helvetica,Arial,sans-serif">60-75 min</text>
 <rect x="165" y="288" width="114" height="32" rx="16" fill="#ffffff" fill-opacity=".14" stroke="#fde68a" stroke-opacity=".7"/><text x="179" y="309" font-size="14" fill="#ffffff" font-family="Segoe UI,Helvetica,Arial,sans-serif">Cost: free</text>
 <g transform="translate(750,73)">

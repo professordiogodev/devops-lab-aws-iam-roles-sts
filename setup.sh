@@ -16,4 +16,4 @@ KEY=$(aws iam create-access-key --user-name clippy-export-legacy --query 'Access
 printf 'AWS_ACCESS_KEY_ID=%s\nAWS_SECRET_ACCESS_KEY=%s\n' $(echo "$KEY") > .legacy-key.env
 chmod 600 .legacy-key.env
 echo "Created s3://$B and the user clippy-export-legacy."
-echo "Its access key is in .legacy-key.env (gitignored). That is the key the contractor committed a year ago."
+echo "Its access key is in .legacy-key.env (gitignored). That is the key that was committed to the repository a year ago."
